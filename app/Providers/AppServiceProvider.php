@@ -4,6 +4,8 @@ namespace App\Providers;
 
 use Illuminate\Support\Facades\Vite;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Schema; //For Schema
+
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -18,8 +20,9 @@ class AppServiceProvider extends ServiceProvider
     /**
      * Bootstrap any application services.
      */
+
     public function boot(): void
-    {
+    {    Schema::defaultStringLength(191);
         Vite::prefetch(concurrency: 3);
     }
 }
