@@ -14,15 +14,15 @@ enum PermissionsEnum: string
     case DeleteProduct = 'DeleteProduct';
     case ViewReports = 'ViewReports';
 
-   //vendor-specific
-   case CreateProducts = 'CreateProducts';
-   case UpdateProducts = 'UpdateProducts';
-   case DeleteOwnProduct = 'DeleteOwnProduct';
-   case ViewOwnProduct = 'ViewOwnProduct';
-   case ViewOwnOrders = 'ViewOwnOrders';
-   case RespondToReviews = 'RespondToReviews';
-   case ManageStoreProfile = 'ManageStoreProfile';
-   case SellProducts = 'SellProducts';
+    //vendor-specific
+    case CreateProducts = 'CreateProducts';
+    case UpdateProducts = 'UpdateProducts';
+    case DeleteOwnProduct = 'DeleteOwnProduct';
+    case ViewOwnProduct = 'ViewOwnProduct';
+    case ViewOwnOrders = 'ViewOwnOrders';
+    case RespondToReviews = 'RespondToReviews';
+    case ManageStoreProfile = 'ManageStoreProfile';
+    case SellProducts = 'SellProducts';
 
     //user-specific
     case BuyProducts = 'BuyProducts';
@@ -32,6 +32,4 @@ enum PermissionsEnum: string
     case PlaceOrder = 'PlaceOrder';
     case WriteReviews = 'WriteReviews';
     case UpdateProfile = 'UpdateProfile';
-
-
 }
